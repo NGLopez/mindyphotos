@@ -10,45 +10,73 @@
     margin: 0;
 }
 
-a:hover {background-color: rgb(62, 146, 202);
+a:hover {
+    background-color: rgb(62, 146, 202);
 }
-a {text-decoration: none;
-    display: inline-block;
-border-radius: 4rem ;
-margin-left: 1rem;
-background-color: aqua;}
-p {font-weight: 700;}
 
-img {border-radius: 2rem;}
+a {
+    text-decoration: none;
+    padding: .5rem;
+    background-color: var(--color-fondo);
+    border-radius: 2rem;
 
-header { background-color: var(--primary-color);
+}
+
+
+p {
+    font-weight: 700;
+}
+
+img {
+    border-radius: 2rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    position: sticky;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     height: 10vh;
-margin: 0%;
-position: sticky;
-top: 0; }
-
-
-
-.aligne-header {
-width: 100%;
-display: flex;
-justify-content: space-between }
-
-.aligne-class {display: inline;
-margin: 2%;
+    align-items: center;
 }
 
-main { background-color: var(--color-fondo); }
-#log {width: 4rem;}
-
-main {min-height: 80vh;
+header img {
+    width: 3rem;
+    height: 3rem;
 }
-footer {height: 10vh;}
+
+/* aca la imagen - texto del main--------- */
+
+main {
+    background-color: var(--color-fondo);
+    min-height: 80vh;
+}
+
+#photomain {
+    width: 15rem;
+    height: 22rem;
+}
+
+.imag-p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.imag-p>p {
+    width: 12rem;
+}
+
 
 /* hasta acá el header, alinear logo con nav */
 
-h1,h2 {text-align: center;
-background-color: var(--color-fondo);}
+h1,
+h2 {
+    text-align: center;
+    background-color: var(--color-fondo);
+}
 
 #banner {
     width: 100%;
@@ -56,124 +84,264 @@ background-color: var(--color-fondo);}
     object-fit: cover;
 }
 
-#imag1 {width: 20vw;}
 
-.aligne { 
+.aligne {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     object-fit: contain;
     text-align: center;
 
-    }
-.alige img { display: flex;
+}
+
+.alige img {
+    display: flex;
     width: 12rem;
 }
-.aligne p {width: 15rem;
+
+.aligne p {
+    width: 15rem;
 }
 
 
-footer { background-color: var(--primary-color);
-text-align: center;
-height: 5vh;}
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    height: 10vh;
+    font-weight: 800;
+    padding: 1rem;
+}
 
 /* style about us */
 
-.main-conteiner { background-color: var(--color-fondo);
-    display:flex;
-    gap: 10vh;
+.main-conteiner {
+    background-color: var(--color-fondo);
+    display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     object-fit: cover;
-    width: 100%;
+
 }
+
 .img-text,
-.img-text2, .img-text3
-{display: flex;
-align-items: center;
-justify-content: center;
-gap: 10vh;
-width: 50%;
-margin-top: 2%;}
-
-.img-text img, 
-.img-text2 img, 
-.img-text3 img 
-{
-    width: 15rem;
-object-fit: cover;
+.img-text2,
+.img-text3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    width: 50%;
+    margin-top: 2%;
 }
 
-.img-text p, .img-text2 p, .img-text3 p 
-{   width: 15rem; }
+.img-text img,
+.img-text2 img,
+.img-text3 img {
+    width: 15rem;
+    object-fit: cover;
+}
+
+.img-text p,
+.img-text2 p,
+.img-text3 p {
+    width: 15rem;
+}
 
 
 
 /* style contact */
+.main-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .main-contact img {
-    
+
     object-fit: cover;
     width: 50vw;
     margin: 5%;
     align-content: center;
 
 }
+
 .main-contact p {
     text-align: center;
 }
-.contactstyle { 
+
+.contactstyle {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-}
-
-.contactstyle {font-weight: 700;}
-
-/* ----------services style tabla------- */
-table {background-color: bisque;
-    width: 60%;
+    
     
 }
 
-table,tr,th,td {border: 1px solid rgb(16, 75, 153);
-border-collapse: collapse;
-text-align: center;
-margin: 0 auto;
+
+.contactstyle { 
+    font-weight: 800;
+}
+
+a:hover {background-color: sienna;}
+
+
+
+/* ----------services style tabla------- */
+table {
+    background-color: bisque;
+    width: 60%;
+
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid rgb(16, 75, 153);
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
 
-caption {margin: 2vh;}
+caption {
+    margin: 2vh;
+}
 
 tr,
 th,
-td {width: 6rem;
-    height: 3rem;}
+td {
+    width: 2, 5rem;
+    height: 5rem;
+}
 
 
 /*----------- rating styles lista ------*/
 
-.listone, .listtwo {
+.listone,
+.listtwo {
 
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 5vw;
     align-items: center;
+}
+
+.listone>img {
+    width: 30vw;
+}
+
+.listtwo>img {
+    width: 30vw;
+}
+
+.aligne-star {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.parraf {
+    text-align: center;
+
+}
+
+#star1,
+#star2 {
+    width: 40%;
+    margin-top: 10%;
+}
+
+/* ---aca el style del formulario/ apartado HIRE */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 14rem;
+    gap: 0, 5rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+textarea {
+    resize: none;
+}
+
+.mapyform {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.h3-map {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* MEDIA QUORIS mobile HOME */
+
+@media only screen and (min-width: 319px) and (max-width:1023px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 55vh;
     }
-    
-.aligne-star { 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1vh;
+    }
+
+    .imag-p {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /* about us mobile */
+
+    .img-text,
+    .img-text2,
+    .img-text3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* contact mobile no ncesita ajustar, solo acomodar espacios entre a y main*/
+
+    /* Services idem que contact*/
+
+    /* rating mobile*/
+
+    .listone,
+    .listtwo {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .aligne-star {
+        display: flex;
+        align-items: center;
+    }
+
+    /* hire mobile */
+
+    .mapyform {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
 }
-
-.parraf {text-align: center;
-   
-}
-
-#star1, #star2 {width: 40%;
-margin-top: 10%;}
-

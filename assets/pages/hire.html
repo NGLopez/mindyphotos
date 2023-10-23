@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindy Photos</title>
+    <link rel="stylesheet" href="/assets/styles/styles2.css">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo.png" alt="log">
+        <nav>
+            <a href="/index.html"> Home</a>
+            <a href="./aboutUs.html">About Us</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./services.html">Services</a>
+            <a href="./services.html">Rating</a>
+            <a href="#">Hire</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Hire</h1>
+        <h2>Fill put the form so we can attend your event</h2>
+
+        <div class="mapyform">
+            <div class="h3-map">
+                <h3> Out location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0442234197!2d-118.7413994902036!3d34.02060844444093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1697812599125!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form action="/show_data.html" method="get">
+
+                <label>First Name and Last Name</label>
+                <input name="First Name" type="text">
+                <label>Phone Numer</label>
+                <input name="Phone" type="text">
+                <label for="service">Choose service</label>
+                <select name="serv" id="service">
+                    <option value="ss"> - </option>
+                    <option value="Wed">Wedding</option>
+                    <option value="bh">Birthday</option>
+                    <option value="kidsb">Kids birthday</option>
+                    <option value="phstudio">Photos studio/outside</option>
+                </select>
+
+                <label>Choose Date</label>
+                <input name="date" type="date">
+                <label>Payment Options</label>
+                <label>
+                    <input type="radio">Cash </label>
+                <label>
+                    <input type="radio">Credit Card </label>
+                <label>
+                    <input type="radio">Debit Card </label>
+                <label> Message (Location and Time) </label>
+                <textarea name="Message" cols="20" rows="5"></textarea>
+                <label>
+                    <input type="checkbox"> I accept terms and conditions...</label>
+                <label> <input type="submit"> </label>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h3>Created by Nadia Lopez</h3>
+    </footer>
+</body>
+</html>
