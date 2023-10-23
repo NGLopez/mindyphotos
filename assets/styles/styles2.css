@@ -159,7 +159,7 @@ footer {
 .main-contact img {
 
     object-fit: cover;
-    width: 50vw;
+    width: 30vw;
     margin: 5%;
     align-content: center;
 
@@ -173,9 +173,7 @@ footer {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    
-    
-}
+    }
 
 
 .contactstyle { 
@@ -201,19 +199,12 @@ td {
     border-collapse: collapse;
     text-align: center;
     margin: 0 auto;
+    height: 5rem;
 }
-
 
 
 caption {
     margin: 2vh;
-}
-
-tr,
-th,
-td {
-    width: 2, 5rem;
-    height: 5rem;
 }
 
 
@@ -256,11 +247,13 @@ td {
 
 /* ---aca el style del formulario/ apartado HIRE */
 
+
+
 form {
     display: flex;
     flex-direction: column;
     max-width: 14rem;
-    gap: 0, 5rem;
+    gap: 0 5rem;
     border: 1px solid black;
     border-radius: 1rem;
     padding: 1rem;
@@ -274,6 +267,7 @@ textarea {
 .mapyform {
     display: flex;
     justify-content: space-around;
+    padding: 2rem;
 
 }
 

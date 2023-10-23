@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mindy Photos</title>
     <link rel="stylesheet" href="/assets/styles/styles2.css">
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="bodyhire">
     <header>
         <img src="../images/logo.png" alt="log">
         <nav>
@@ -17,7 +17,7 @@
             <a href="./aboutUs.html">About Us</a>
             <a href="./contact.html">Contact</a>
             <a href="./services.html">Services</a>
-            <a href="./services.html">Rating</a>
+            <a href="./rating.html">Rating</a>
             <a href="#">Hire</a>
         </nav>
     </header>
@@ -36,27 +36,27 @@
             <form action="/show_data.html" method="get">
 
                 <label>First Name and Last Name</label>
-                <input name="First Name" type="text">
+                <input name="First Name and Last Name" type="text">
                 <label>Phone Numer</label>
-                <input name="Phone" type="text">
+                <input name="Phone Number" type="text">
                 <label for="service">Choose service</label>
-                <select name="serv" id="service">
+                <select name="Service" id="service">
                     <option value="ss"> - </option>
-                    <option value="Wed">Wedding</option>
-                    <option value="bh">Birthday</option>
-                    <option value="kidsb">Kids birthday</option>
-                    <option value="phstudio">Photos studio/outside</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Kids birthday">Kids birthday</option>
+                    <option value="Photos studio/outside">Photos studio/outside</option>
                 </select>
 
                 <label>Choose Date</label>
-                <input name="date" type="date">
+                <input name="Date" type="date">
                 <label>Payment Options</label>
                 <label>
-                    <input type="radio">Cash </label>
+                    <input type="radio" name= "Payment" value="Cash">Cash </label>
                 <label>
-                    <input type="radio">Credit Card </label>
+                    <input type="radio" name= "Payment" value="Credit Card">Credit Card </label>
                 <label>
-                    <input type="radio">Debit Card </label>
+                    <input type="radio" name= "Payment" value="Debitard">Debit Card </label>
                 <label> Message (Location and Time) </label>
                 <textarea name="Message" cols="20" rows="5"></textarea>
                 <label>
